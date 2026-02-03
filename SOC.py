@@ -34,12 +34,20 @@ def relax():
                 grid[nx, ny] += 1
                 if grid[nx, ny] >= THRESH:
                     q.append((nx, ny))
-    return topplings            
+    return topplings 
+import random  # you also forgot this import
+
+# run the sandpile for a while
+for _ in range(10):
+    drive()
+    relax()
+
 print(grid)
 plt.imshow(grid)
 plt.colorbar()
 plt.show()
-# Simple implementation of a 2D Sandpile Model (SOC)
+           
+
 
 
     
