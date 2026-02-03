@@ -37,7 +37,7 @@ def relax():
     return topplings 
 import random 
 
-for _ in range(10):
+for _ in range(1000):
     drive()
     relax()
 
