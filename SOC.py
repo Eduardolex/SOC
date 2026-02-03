@@ -35,9 +35,8 @@ def relax():
                 if grid[nx, ny] >= THRESH:
                     q.append((nx, ny))
     return topplings 
-import random  # you also forgot this import
+import random 
 
-# run the sandpile for a while
 for _ in range(10):
     drive()
     relax()
